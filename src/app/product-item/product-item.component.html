@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div *ngFor="let product of products" class="card" style="width: 18rem;">
+                <img src="{{product.image}}" class="card-img-top">
+                <div class="card-body">
+                    <div class="name-spacer">
+                        <h5 class="card-title">{{product.name}}</h5>
+                    </div>
+                  
+                  <p class="card-text">R {{product.price}}</p>
+                  <a href="#" class="btn btn-primary" (click)="addToCart(product)">Add to Cart</a>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

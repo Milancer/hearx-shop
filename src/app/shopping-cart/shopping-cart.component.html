@@ -1,0 +1,33 @@
+<div class="header-container">
+    <h4>My Cart</h4>
+</div>
+<div class="item-container">
+    <div class="shopping-item">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-8">
+                <p>Title</p>
+              </div>
+              <div class="col-2">
+                <p>Price</p>
+              </div>
+              <div class="col-1">
+                <p>Quantity</p>
+              </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div *ngFor="let product of products" class="row">
+              <div class="col-8">
+                <p>{{product.name}}</p>
+              </div>
+              <div class="col-3">
+                <p>R {{product.price}}</p>
+              </div>
+              <div class="col-1">
+                <p>{{product.quantity}}</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>

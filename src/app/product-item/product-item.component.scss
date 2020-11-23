@@ -1,0 +1,12 @@
+.card{
+    float:left; 
+    display:inline;
+    margin: 8px;
+    height: 450px;
+}
+
+.name-spacer{
+    height: 50px;
+    width: 100%;
+    text-overflow: ellipsis;
+}
